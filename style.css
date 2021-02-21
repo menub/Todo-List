@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(120deg, #5e5b5b, #888686);
+    min-height: 100vh;
+}
+
+header{
+    font-size: 1.3rem;
+    color: white;
+}
+
+header,form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+form input,form button{
+    padding: 0.7rem;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+}
+form input{
+    width: 400px;
+    /* border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+     */
+   
+
+}
+form button{
+    width: 50px;
+    background-color: rgb(58, 247, 121);
+    color: white;
+    cursor: pointer;
+    /* border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    margin-right: 1rem;    
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width: 25%;
+    list-style-type: none;
+}
+ .todo{
+     margin: 1rem;
+     background: white;
+     color: black;
+     font-size: 1.3rem;
+     padding-left: 0.5rem;
+     border-radius: 10px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     transition: all 0.5s ease;
+ }
+
+ .todo li{
+     flex: 1;
+ }
+
+ .check-button,.remove-button{
+     
+     background: #ff6f47;
+     color: white;
+     border: none;
+     padding: .5rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+    outline: none;
+ }
+ .check-button{
+     border-top-left-radius: 10px;
+     background: rgb(26, 236, 201);
+ }
+ .remove-button{
+     border-bottom-right-radius: 10px;
+ }
+
+ .fa-trash,.fa-check{
+     pointer-events: none;
+ }
+
+ .checked{
+     text-decoration: line-through;
+     opacity: .5;
+ }
+
+ .fall{
+     transform: translateX(520px);
+     opacity: 0;
+     transition: all 1s ease;
+ }
+
+  select{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     border: none;
+     outline: none;
+     
+ }
+ .select{
+    
+     position: relative;
+     overflow: hidden;
+ }
+
+  select{ 
+     color: #ff6f47;
+     width: 10rem;
+     cursor: pointer;
+     padding: 1rem;
+     padding-left: 0.5rem;
+     font-size: 1rem;
+ }
+
+ .select::after{
+     content: "\25BC";
+     position: absolute;
+     background: #ff6f47;
+     top: 0;
+     right: 0;
+     padding: 1rem;
+     pointer-events: none;
+     
+ } 
